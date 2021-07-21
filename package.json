@@ -1,6 +1,6 @@
 {
-  "name": "three-bmfont-text",
-  "version": "3.0.0",
+  "name": "@kilokilo/three-bmfont-text",
+  "version": "3.1.0",
   "description": "renders BMFont files in ThreeJS with word-wrapping",
   "main": "index.js",
   "license": "MIT",
@@ -9,14 +9,8 @@
     "email": "dave.des@gmail.com",
     "url": "https://github.com/mattdesl"
   },
-  "standard": {
-    "globals": [
-      "THREE"
-    ]
-  },
   "dependencies": {
     "array-shuffle": "^1.0.1",
-    "inherits": "^2.0.1",
     "layout-bmfont-text": "^1.2.0",
     "nice-color-palettes": "^3.0.0",
     "object-assign": "^4.0.1",
@@ -33,10 +27,13 @@
     "load-bmfont": "^1.0.0",
     "standard": "^14.3.4",
     "sun-tzu-quotes": "^1.0.0",
-    "three": "^0.118.3",
     "three-orbit-viewer": "^69.2.9",
     "three-vignette-background": "^1.0.2",
-    "uglify-js": "^3.10.0"
+    "uglify-js": "^3.10.0",
+    "three": "^0.130.1"
+  },
+  "peerDependencies": {
+    "three": "^0.130.1"
   },
   "scripts": {
     "build": "browserify test/test-shader.js -t glslify | uglifyjs -cm > test/bundle.js",
@@ -70,7 +67,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/Jam3/three-bmfont-text.git"
+    "url": "https://github.com/KiloKilo/three-bmfont-text.git"
   },
   "homepage": "https://github.com/Jam3/three-bmfont-text",
   "bugs": {
